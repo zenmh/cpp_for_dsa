@@ -16,7 +16,8 @@ int main()
       dhoni->jersey_no = 19;
       dhoni->country = "India";
 
-      kohli = dhoni; // It's not working and bad code
+      kohli->jersey_no = dhoni->jersey_no;
+      kohli->country = dhoni->country;
 
       cout << dhoni->jersey_no << " " << dhoni->country << endl;
 
