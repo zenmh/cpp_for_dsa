@@ -4,7 +4,7 @@ using namespace std;
 int *sort_it(int n)
 {
 
-      int *a = new int(n);
+      int *a = new int[n];
 
       for (int i = 0; i < n; i++)
             cin >> a[i];

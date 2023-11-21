@@ -20,16 +20,17 @@ public:
 Student *fun()
 {
 
-      Student rahil(17, 9, 301, 4.33);
-      Student *p = &rahil;
-      return p;
+      Student *rahil = new Student(17, 9, 301, 4.33);
+
+      return rahil;
 }
 
 int main()
 {
       Student *a = fun();
 
-      cout << a->age << " " << a->cls; // there have an issue with gurbaze value
+      cout << a->age << " " << a->cls << " " << a->roll << " " << a->gpa;
+      // there have an issue with gurbaze value
 
       return 0;
 }
