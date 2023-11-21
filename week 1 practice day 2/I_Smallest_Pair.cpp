@@ -3,23 +3,26 @@ using namespace std;
 
 int main()
 {
-      int n, sm = INT_MAX;
-      cin >> n;
+      int ts;
+      cin >> ts;
 
-      int a[n];
+      for (int k = 0; k < ts; k++)
+      {
 
-      for (int i = 0; i < n; i++)
-            cin >> a[i];
+            int n, sm = INT_MAX;
+            cin >> n;
 
-      for (int i = 1; i < n; i++)
-            for (int j = i + 1; j <= n; j++)
-            {
-                  long long sum = a[i] + a[j] + (j - i);
-                  if (sum < sm)
-                        sm = sum;
-            }
+            int a[n];
 
-      cout << sm;
+            for (int i = 0; i < n; i++)
+                  cin >> a[i];
+
+            for (int i = 1; i < n; i++)
+                  for (int j = i + 1; j <= n; j++)
+                        sm = min(sm, a[i] + a[j] + (j - i));
+
+            cout << sm;
+      }
 
       return 0;
 }
