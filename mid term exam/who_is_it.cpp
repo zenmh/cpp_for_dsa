@@ -38,11 +38,9 @@ int main()
             if (a->tm > b->tm && a->tm > c->tm)
                   cout << a->id << " " << a->name << " " << a->sec << " " << a->tm;
             else if (b->tm > a->tm && b->tm > c->tm)
-                  cout
-                      << b->id << " " << b->name << " " << b->sec << " " << b->tm;
+                  cout << b->id << " " << b->name << " " << b->sec << " " << b->tm;
             else if (c->tm > a->tm && c->tm > b->tm)
-                  cout
-                      << c->id << " " << c->name << " " << c->sec << " " << c->tm;
+                  cout << c->id << " " << c->name << " " << c->sec << " " << c->tm;
             else
             {
                   if ((a->tm == b->tm && a->id < b->id) || (a->tm == c->tm && a->id < c->id))
