@@ -7,15 +7,19 @@ int main()
 
       while (cin.getline(s, 100005))
       {
-            sort(s, s + strlen(s));
 
-            for (int i = 0; i < strlen(s); i++)
+            int n = strlen(s);
+
+            sort(s, s + n);
+
+            for (int i = 0; i < n; i++)
             {
                   if (s[i] == 32)
                         continue;
 
                   cout << s[i];
             }
+
             cout << endl;
       }
 
