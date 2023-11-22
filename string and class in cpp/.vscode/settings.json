@@ -14,6 +14,7 @@
     "string": "cpp",
     "vector": "cpp",
     "random": "cpp",
-    "iosfwd": "cpp"
+    "iosfwd": "cpp",
+    "istream": "cpp"
   }
 }
