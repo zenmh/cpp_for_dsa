@@ -1,5 +1,5 @@
-Rakib 4 99
-Akib 11 99
-Niraz 12 99
-Miraz 41 99
-Sakib 91 99
+Rakib 4 98
+Akib 11 93
+Miraz 41 93
+Sakib 91 93
+Niraz 12 89
