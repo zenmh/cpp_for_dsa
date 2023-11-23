@@ -1,3 +1,2 @@
-Taskin Ahmed 29 3
-Shoriful Islam 24 47
-Mostafizur Rahman 30 90
+Elder: Mostafizur Rahman 30 90
+Smaller: Shoriful Islam 24 47
