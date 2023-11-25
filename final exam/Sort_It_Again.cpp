@@ -12,13 +12,13 @@ public:
 
 bool cmp(Student a, Student b)
 {
-      if (a.eng_marks == b.eng_marks)
-            return a.math_marks > b.math_marks;
-      if (a.math_marks == b.math_marks)
-            return a.id < b.id;
-      else
+      if (a.eng_marks > b.eng_marks || a.eng_marks < b.eng_marks)
             return a.eng_marks > b.eng_marks;
-};
+      else if (a.math_marks > b.math_marks || a.math_marks < b.math_marks)
+            return a.math_marks > b.math_marks;
+      else
+            return a.id < b.id;
+}
 
 int main()
 {

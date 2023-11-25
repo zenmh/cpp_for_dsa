@@ -12,7 +12,10 @@ int main()
       while (ss >> word)
       {
             if (word == "Jessica")
+            {
                   f = 1;
+                  break;
+            }
       }
 
       if (f == 1)

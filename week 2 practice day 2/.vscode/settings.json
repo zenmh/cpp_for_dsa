@@ -2,6 +2,7 @@
   "files.associations": {
     "cmath": "cpp",
     "complex": "cpp",
-    "chrono": "cpp"
+    "chrono": "cpp",
+    "random": "cpp"
   }
 }
