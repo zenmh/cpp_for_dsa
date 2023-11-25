@@ -5,10 +5,10 @@ int main()
 {
       string s, word;
       getline(cin, s);
-
-      int tw = count(s.begin(), s.end(), ' '), cnt = 0;
-
+      // int tw = count(s.begin(), s.end(), ' '), cnt = 0;
       stringstream ss(s);
+
+      int space = 0;
 
       while (ss >> word)
       {
@@ -20,10 +20,17 @@ int main()
                   i++;
                   j--;
             }
-            cout << word;
 
-            if (++cnt <= tw)
-                  cout << " ";
+            if (space)
+                  cout << " " << word;
+            else
+            {
+                  cout << word;
+                  space++;
+            }
+
+            // if (++cnt <= tw)
+            //       cout << " ";
       };
 
       return 0;

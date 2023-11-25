@@ -16,20 +16,16 @@ int main()
             cin >> n >> s;
 
             for (char c : s)
-                  frq[c - 'A']++;
+                  if (frq[c - 'A'])
+                        frq[c - 'A']++;
+                  else
+                        frq[c - 'A'] += 2;
 
             for (char i = 'A'; i <= 'Z'; i++)
-                  for (int j = 0; j < frq[i - 'A']; j++)
-                  {
-                        // if (frq[i - 'A'])
-                        //       cout << frq[i - 'A'];
+                  if (frq[i - 'A'] > 0)
+                        cnt += frq[i - 'A'];
 
-                        cout << i;
-                  }
-
-            cout << endl;
-
-            // cout << n << " " << s << endl;
+            cout << cnt << endl;
       }
 
       return 0;
